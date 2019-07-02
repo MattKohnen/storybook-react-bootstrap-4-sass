@@ -64,6 +64,8 @@ function App() {
                     <br />
                     Here is a <a href="newpage.html">link to another page</a>
                 </p>
+
+                <Button className={'btn-lg'}>Primary Button</Button>
             </div>
         </div>
     </div>

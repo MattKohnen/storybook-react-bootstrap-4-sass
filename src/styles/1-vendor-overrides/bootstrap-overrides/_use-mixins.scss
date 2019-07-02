@@ -1,5 +1,7 @@
 /* Use Bootstrap Mixins -------------------- */
 
+// FOR TESTING:
 .btn-custom {
   @include button-variant(red, white, red, red);
 }
+// END testing

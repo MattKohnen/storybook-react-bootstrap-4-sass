@@ -1,5 +1,16 @@
-.btn {
-  &.our-button {
-    color: orange;
-  }
+//====================================
+// Try to avoid adding styles here if possible!
+//
+// Prefer adding via Bootstrap overrides:
+// Bootstrap variables:  src/styles/1-vendor-overrides/bootstrap-overrides/_override-variables.scss
+// Bootstrap classes:  src/styles/1-vendor-overrides/bootstrap-overrides/_override-defaults.scss
+//====================================
+
+
+@import "../../styles/3-base/_functions.scss";
+
+// FOR TESTING:
+.our-button {
+  color: orange;
 }
+// END testing

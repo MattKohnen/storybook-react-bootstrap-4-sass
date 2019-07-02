@@ -7,11 +7,18 @@
 
 
 /* 1. Import only the necessary Bootstrap files */
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_mixins.scss";
 
-/* 2. Import overrides */
+/* Import custom functions (to be used below) */
+@import "../../3-base/_functions.scss";
+/* Import variable overrides */
+@import "override-variables";
+
+/* Import Bootstrap variables */
+@import "~bootstrap/scss/_variables.scss";
+
+/* 2. Import all other overrides */
 @import "override-defaults";
 
 /* 3. Import Bootstrap to set the changes */

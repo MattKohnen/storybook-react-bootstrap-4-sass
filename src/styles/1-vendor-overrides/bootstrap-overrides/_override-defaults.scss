@@ -1,3 +1,36 @@
 /* Bootstrap Overrides -------------------- */
 
+
+// FOR TESTING:
 $navbar-dark-color: dodgerblue;
+// END testing
+
+.btn-primary,
+.btn-secondary {
+  min-width: rem(190px);
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-primary {
+  &:hover {
+    background-color: #134F82 !important;
+    border-color: #0465b7 !important;
+  }
+}
+
+.btn-secondary {
+  background: transparent !important;
+  border: 2px solid #A7BAD0 !important;
+  color: #134F82 !important;
+  font-size: rem(12px) !important;
+  padding: rem(8px) rem(20px) !important;
+
+  &:focus,
+  &:hover {
+    background-color: transparent !important;
+    border-color: #0465b7 !important;
+    box-shadow: none;
+    color: #fff !important;
+  }
+}

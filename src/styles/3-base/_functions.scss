@@ -1,0 +1,17 @@
+/* Custom Functions -------------------- */
+
+
+// https://gist.github.com/MattKohnen/0ff233f5272b1fb57579c2cac82490c2
+// Usage:
+// With the default `$baseFontSize` (so not passed in):
+// padding: rem(8px) rem(20px);
+// font-size: rem(12px) !important;
+// With a custom `$baseFontSize` passed in:
+// font-size: rem(12px, 10px) !important;
+@function rem($pixelSize, $baseFontSize:null) {
+  @if $baseFontSize {
+    @return ($pixelSize / $baseFontSize) * 1rem;
+  } @else {
+    @return ($pixelSize / 16px) * 1rem; // Assumes the typical browser default of `16px`
+  }
+}
